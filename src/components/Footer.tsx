@@ -28,14 +28,6 @@ export function Footer() {
             LinkedIn
           </a>
           <a
-            href={profile.social.twitter}
-            target="_blank"
-            rel="noreferrer"
-            className="transition-colors hover:text-foreground"
-          >
-            Twitter
-          </a>
-          <a
             href={`mailto:${profile.email}`}
             className="transition-colors hover:text-foreground"
           >

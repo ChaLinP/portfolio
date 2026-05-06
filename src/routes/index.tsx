@@ -20,13 +20,83 @@ const ease = [0.22, 1, 0.36, 1] as const;
 function HomePage() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Subtle gradient backdrop */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 [background:radial-gradient(80%_60%_at_50%_0%,color-mix(in_oklab,var(--accent)_10%,transparent),transparent_70%)]"
-      />
+      {/* 🌊 Flow ribbons (always visible behind everything) */}
+      <svg
+        className="absolute inset-0 z-0 h-full w-full"
+        viewBox="0 0 1440 800"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <linearGradient id="ribbon-light" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#38bdf8" />  {/* sky blue */}
+            <stop offset="50%" stopColor="#3b82f6" /> {/* primary blue */}
+            <stop offset="100%" stopColor="#1d4ed8" /> {/* deep blue */}
+          </linearGradient>
 
-      <div className="mx-auto w-full max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pt-40">
+          <linearGradient id="ribbon-dark" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#60a5fa" />  {/* soft blue */}
+            <stop offset="50%" stopColor="#3b82f6" /> {/* balanced blue */}
+            <stop offset="100%" stopColor="#1e40af" /> {/* navy blue */}
+          </linearGradient>
+
+          <filter id="blur">
+            <feGaussianBlur stdDeviation="0.8" />
+          </filter>
+        </defs>
+
+        {/* Light mode ribbons */}
+        <g className="dark:opacity-0 transition-opacity duration-300">
+          {Array.from({ length: 18 }).map((_, i) => {
+            const offset = i * 18;
+            return (
+              <path
+                key={`light-${i}`}
+                d={`
+                  M0 ${300 + offset}
+                  C 200 ${100 + offset}
+                    400 ${500 + offset}
+                    600 ${300 + offset}
+                  S 1000 ${100 + offset}
+                    1440 ${300 + offset}
+                `}
+                fill="none"
+                stroke="url(#ribbon-light)"
+                strokeWidth="1.2"
+                opacity={0.04 + i * 0.006}
+                filter="url(#blur)"
+              />
+            );
+          })}
+        </g>
+
+        {/* Dark mode ribbons */}
+        <g className="opacity-0 dark:opacity-100 transition-opacity duration-300">
+          {Array.from({ length: 18 }).map((_, i) => {
+            const offset = i * 18;
+            return (
+              <path
+                key={`dark-${i}`}
+                d={`
+                  M0 ${300 + offset}
+                  C 200 ${100 + offset}
+                    400 ${500 + offset}
+                    600 ${300 + offset}
+                  S 1000 ${100 + offset}
+                    1440 ${300 + offset}
+                `}
+                fill="none"
+                stroke="url(#ribbon-dark)"
+                strokeWidth="1.2"
+                opacity={0.08 + i * 0.01}
+                filter="url(#blur)"
+              />
+            );
+          })}
+        </g>
+      </svg>
+
+
+      <div className="mx-auto w-full max-w-6xl px-5 pb-24 pt-32 sm:px-8 sm:pt-40 relative z-10">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,7 +124,6 @@ function HomePage() {
               {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
-
         </motion.h1>
 
         <motion.p
@@ -81,7 +150,7 @@ function HomePage() {
           </Link>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface bg-white"
           >
             Get in touch
           </Link>
@@ -89,7 +158,7 @@ function HomePage() {
             href={profile.cv}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface bg-white"
           >
             Download CV
           </a>
