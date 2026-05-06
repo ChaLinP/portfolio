@@ -27,7 +27,6 @@ export const skills: SkillGroup[] = [
       "MongoDB",
       "Redis",
       "WebSockets",
-      "BitBucket"
     ],
   },
   {
@@ -54,6 +53,7 @@ export const skills: SkillGroup[] = [
       "Figma",
       "Git",
       "Postman",
+      "BitBucket"
     ],
   },
 ];
