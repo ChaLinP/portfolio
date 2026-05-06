@@ -150,7 +150,7 @@ function HomePage() {
           </Link>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface bg-white"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface "
           >
             Get in touch
           </Link>
@@ -158,7 +158,7 @@ function HomePage() {
             href={profile.cv}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface bg-white"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface "
           >
             Download CV
           </a>
@@ -170,8 +170,8 @@ function HomePage() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-24 grid max-w-3xl grid-cols-2 gap-8 border-t border-border pt-10 sm:grid-cols-3"
         >
-          <Stat value="2+" label="Years building" />
-          <Stat value="10+" label="Products shipped" />
+          <Stat value="6 Months" label="AI Internship Experience" />
+          <Stat value="4+" label="Production-Grade Projects" />
           <Stat value="∞" label="Details obsessed over" />
         </motion.div>
       </div>

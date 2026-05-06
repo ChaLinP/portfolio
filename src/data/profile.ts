@@ -3,16 +3,16 @@ export const profile = {
   monogram: "CP",
   tagline: "",
   shortBio:
-    "I design and build modern web applications with a focus on clean architecture, performance, and real-world usability—bridging backend systems and intuitive user experiences.",
+    "I design and build AI-driven software systems, working across machine learning, backend engineering, and full-stack applications to deliver practical, real-world solutions.",
 
   longBio: [
-    "I'm a software engineering undergraduate specializing in full-stack development, with hands-on experience building scalable systems across modern tech stacks. From microservices with Spring Boot to dynamic frontends with React and TypeScript, I focus on writing code that is structured, maintainable, and production-ready.",
-    "My work often sits at the intersection of system design and user experience—optimizing APIs, structuring data flows, and crafting interfaces that feel fast and intuitive. I enjoy solving real-world problems, whether it's improving system performance, designing clean architectures, or integrating complex features end-to-end.",
-    "Outside of development, I spend time exploring distributed systems, experimenting with new tools and frameworks, and building side projects that push my understanding of software engineering further.",
+    "I am a Information Technology undergraduate specializing in Data Science with hands-on experience building data-driven and AI-powered systems. My work focuses on applying machine learning, backend engineering, and data processing techniques to solve practical problems.",
+    "I have worked on projects involving computer vision pipelines, LLM-based systems, and full-stack applications using technologies such as React, FastAPI, and Spring Boot. I enjoy designing systems that connect data, models, and user-facing applications in a clean and scalable way.",
+    "I am continuously improving my skills in machine learning, system design, and software engineering, with the goal of building reliable and impactful AI solutions in real-world environments.",
   ],
   email: "chanmilinara123@gmail.com",
   location: "Colombo, Sri Lanka",
-  cv: "YOUR_GOOGLE_DRIVE_CV_LINK_HERE",
+  cv: "https://drive.google.com/drive/folders/1vKGQSDMAxJM1uiSi5HRpyCeVPNG0NAfT?usp=sharing",
   social: {
     github: "https://github.com/ChaLinP",
     linkedin: "https://www.linkedin.com/in/chanmi-peiris",

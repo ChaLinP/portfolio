@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeader } from "@/components/Section";
 import { profile } from "@/data/profile";
-import portrait from "@/assets/portrait.png";
+import portrait from "@/assets/portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -9,12 +9,12 @@ export const Route = createFileRoute("/about")({
       { title: `About — ${profile.name}` },
       {
         name: "description",
-        content: `Get to know ${profile.name}: software engineer, design-minded builder, and craft-obsessed product thinker.`,
+        content: `Get to know ${profile.name}: AI-focused software engineer working on machine learning and LLM-based systems.`,
       },
       { property: "og:title", content: `About — ${profile.name}` },
       {
         property: "og:description",
-        content: `Get to know ${profile.name}: software engineer, design-minded builder, and craft-obsessed product thinker.`,
+        content: `Get to know ${profile.name}: AI-focused software engineer working on machine learning and LLM-based systems.`,
       },
       { property: "og:image", content: portrait },
       { name: "twitter:image", content: portrait },
@@ -28,7 +28,7 @@ function AboutPage() {
     <Section first>
       <SectionHeader
         eyebrow="About"
-        title="A craftsman working in software."
+        title="AI systems engineer building intelligent applications"
         description={profile.shortBio}
       />
 
@@ -44,7 +44,7 @@ function AboutPage() {
           </div>
         </div>
 
-        <div className="space-y-6 text-[17px] leading-relaxed text-foreground/85">
+        <div className="space-y-6 text-[17px] leading-relaxed text-foreground/85 text-justify">
           {profile.longBio.map((p, i) => (
             <p key={i}>{p}</p>
           ))}

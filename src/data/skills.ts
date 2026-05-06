@@ -27,6 +27,7 @@ export const skills: SkillGroup[] = [
       "MongoDB",
       "Redis",
       "WebSockets",
+      "BitBucket"
     ],
   },
   {
@@ -35,7 +36,6 @@ export const skills: SkillGroup[] = [
       "Python",
       "Retrieval-Augmented Generation (RAG)",
       "Large Language Model (LLM) Integration",
-      "CNN (Computer Vision)",
       "Data Processing & Feature Engineering",
     ],
   },

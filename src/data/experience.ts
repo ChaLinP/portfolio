@@ -7,17 +7,10 @@ export type Role = {
 
 export const experience: Role[] = [
   {
-    company: "Creavint",
-    role: "Software Engineer Intern",
-    period: "2024 — 2025",
+    company: "Sri Lanka Telecom",
+    role: "AI Intern",
+    period: "2025 — 2026",
     impact:
-      "Developed and launched a writing platform end-to-end, contributing to its growth to 60K weekly active users.",
-  },
-  {
-    company: "Creavint",
-    role: "Associate Software Engineer",
-    period: "2025 — Present",
-    impact:
-      "Optimized the query layer and backend performance, achieving significant reductions in latency and infrastructure cost.",
+      "Built and contributed to multiple AI and software engineering systems, including computer vision pipelines, LLM-based estimation tools, and FastAPI services integrated with external APIs. Focused on improving system efficiency, model evaluation, and end-to-end application development.",
   },
 ];
