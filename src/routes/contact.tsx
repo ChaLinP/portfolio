@@ -6,12 +6,12 @@ import { profile } from "@/data/profile";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Alex Chen" },
+      { title: "Contact — Chanmi Peiris" },
       {
         name: "description",
         content: "Get in touch about a project, a role, or an idea worth making real.",
       },
-      { property: "og:title", content: "Contact — Alex Chen" },
+      { property: "og:title", content: "Contact — Chanmi Peiris" },
       {
         property: "og:description",
         content: "Get in touch about a project, a role, or an idea worth making real.",
@@ -58,14 +58,6 @@ function ContactPage() {
                 className="text-foreground transition-colors hover:text-accent"
               >
                 LinkedIn
-              </a>
-              <a
-                href={profile.social.twitter}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground transition-colors hover:text-accent"
-              >
-                Twitter
               </a>
             </div>
           </Detail>

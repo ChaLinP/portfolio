@@ -6,12 +6,12 @@ import { experience } from "@/data/experience";
 export const Route = createFileRoute("/experience")({
   head: () => ({
     meta: [
-      { title: "Experience — Alex Chen" },
+      { title: "Experience — Chanmi Peiris" },
       {
         name: "description",
         content: "Roles, companies, and the impact behind eight years of building software.",
       },
-      { property: "og:title", content: "Experience — Alex Chen" },
+      { property: "og:title", content: "Experience — Chanmi Peiris" },
       {
         property: "og:description",
         content: "Roles, companies, and the impact behind eight years of building software.",

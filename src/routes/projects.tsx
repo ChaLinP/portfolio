@@ -8,13 +8,13 @@ import { projects, type Project } from "@/data/projects";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Selected Work — Alex Chen" },
+      { title: "Selected Work — Chanmi Peiris" },
       {
         name: "description",
         content:
           "Selected projects spanning writing tools, observability, sustainability, mobile, and developer infrastructure.",
       },
-      { property: "og:title", content: "Selected Work — Alex Chen" },
+      { property: "og:title", content: "Selected Work — Chanmi Peiris" },
       {
         property: "og:description",
         content:

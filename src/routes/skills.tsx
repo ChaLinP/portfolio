@@ -6,12 +6,12 @@ import { skills } from "@/data/skills";
 export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
-      { title: "Skills — Alex Chen" },
+      { title: "Skills — Chanmi Peiris" },
       {
         name: "description",
         content: "Tools, languages, and platforms I work with across frontend, backend, and infrastructure.",
       },
-      { property: "og:title", content: "Skills — Alex Chen" },
+      { property: "og:title", content: "Skills — Chanmi Peiris" },
       {
         property: "og:description",
         content: "Tools, languages, and platforms I work with across frontend, backend, and infrastructure.",
