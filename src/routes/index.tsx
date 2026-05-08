@@ -6,9 +6,9 @@ import { profile } from "@/data/profile";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${profile.name} — Software Engineer` },
+      { title: `${profile.name} - AI & ML Engineer` },
       { name: "description", content: profile.tagline },
-      { property: "og:title", content: `${profile.name} — Software Engineer` },
+      { property: "og:title", content: `${profile.name} - AI & ML Engineer` },
       { property: "og:description", content: profile.tagline },
     ],
   }),

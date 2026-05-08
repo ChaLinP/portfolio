@@ -10,17 +10,17 @@ import { NotFound } from "@/components/NotFound";
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      { title: "Ashan Tharindu — Software Engineer" },
+      { title: "Chanmi Peiris - AI & ML Engineer" },
       {
         name: "description",
-        content: "Software Engineer crafting scalable digital experiences.",
+        content: "AI & ML Engineer crafting scalable digital experiences.",
       },
-      { name: "author", content: "Ashan Tharindu" },
+      { name: "author", content: "Chanmi Peiris - AI & ML Engineer" },
       { name: "theme-color", content: "#ffffff" },
-      { property: "og:title", content: "Ashan Tharindu — Software Engineer" },
+      { property: "og:title", content: "Chanmi Peiris - AI & ML Engineer" },
       {
         property: "og:description",
-        content: "Software Engineer crafting scalable digital experiences.",
+        content: "AI & ML Engineer crafting scalable digital experiences.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
