@@ -28,7 +28,7 @@ function AboutPage() {
     <Section first>
       <SectionHeader
         eyebrow="About"
-        title="AI systems engineer building intelligent applications"
+        title="I build things with Data and AI"
         description={profile.shortBio}
       />
 

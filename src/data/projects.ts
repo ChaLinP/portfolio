@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: "AI Chatbot Assistant",
     summary: "LLM-powered chatbot for answering user queries",
     description:"A chatbot using ChatGPT API to answer questions ",
-    tech: ["Python", "JavaScript", "ChatGPT API","Qdrant","Docker"],
+    tech: ["JavaScript", "ChatGPT API","Qdrant","Docker"],
     year: "2025",
     role: "SE Intern (Contributor)"
   }
